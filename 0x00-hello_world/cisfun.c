@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-char main()
+int main(void)
 {
   printf("C is Fun\n");
     return (0);
