@@ -12,11 +12,10 @@ int plus;
 plus = 0;
 
 while (plus < 10)
-  {
-   
-    printf("%d   \n", plus);
+{
+printf("%d   \n", plus);
 
-    plus++;
-  }
+plus++;
+}
 return (0);
 }
