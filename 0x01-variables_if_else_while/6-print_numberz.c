@@ -9,15 +9,12 @@ int main(void)
 {
 int plus;
 
-plus = 0;
-
-while (plus < 10)
+for (plus = 0 ; plus < 10  ; plus++)
 {
-printf("%d", plus);
+putchar(plus + '0');
 
-plus++;
 }
-printf(" \n");
+putchar('\n');
 
 return (0);
 }

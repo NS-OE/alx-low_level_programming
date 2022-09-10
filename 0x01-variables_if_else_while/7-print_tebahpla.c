@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <string.h>
 
 /**
  * main - Entry point
@@ -9,15 +10,12 @@ int main(void)
 {
 int plus;
 
-plus = 0;
-
-while (plus < 10)
+for (plus = 'a' ; plus <= 'z' ; plus++)
 {
-printf("%d", plus);
+  putchar(_strrev(plus));
 
-plus++;
 }
-printf(" \n");
+putchar('\n');
 
 return (0);
 }
