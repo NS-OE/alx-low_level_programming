@@ -17,7 +17,7 @@ printf("%d", plus);
 
 plus++;
 }
-printf(" \n");
+printf("\n");
 
 return (0);
 }

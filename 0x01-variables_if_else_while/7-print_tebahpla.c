@@ -10,9 +10,9 @@ int main(void)
 {
 int plus;
 
-for (plus = 'a' ; plus <= 'z' ; plus++)
+for (plus = 'z' ; plus >= 'a' ; plus--)
 {
-  putchar(_strrev(plus));
+  putchar(plus);
 
 }
 putchar('\n');
