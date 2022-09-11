@@ -12,7 +12,7 @@ int plus;
 
 for (plus = 'z' ; plus >= 'a' ; plus--)
 {
-  putchar(plus);
+putchar(plus);
 
 }
 putchar('\n');
