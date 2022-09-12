@@ -1,21 +1,19 @@
 #include <stdio.h>
 /**
- * main - Print all possible combinations of single digit numbers
+ * main - Entry point
  *
  * Return: Always 0 (Success)
  */
 int main(void)
 {
 int plus;
-for (plus = 0 ; plus < 10 ; plus++)
+for (plus = 0 ; plus < 10  ; plus++)
 {
 putchar(plus + '0');
 
 if (plus < 9)
-{
 putchar(',');
 putchar(' ');
-}
 }
 putchar('\n');
 return (0);

@@ -1,25 +1,27 @@
 #include <stdio.h>
 /**
- * main - Entry point
+ * main - prints all possible combination of three digits
  *
  * Return: Always 0 (Success)
  */
 int main(void)
 {
-int plus, pl;
+int plus, pl, plu;
 for (plus = 0 ; plus < 10 ; plus++)
 {
 for (pl = plus + 1 ; pl < 10 ; pl++)
 {
-if (plus != pl)
+for (plu = pl + 1 ; plu < 10 ; plu++)
 {
 putchar(plus + '0');
 putchar(pl + '0');
-}
-if (plus < 8)
+putchar(plu + '0');
+
+if (plus < 7)
 {
 putchar(',');
 putchar(' ');
+}
 }
 }
 }
