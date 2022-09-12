@@ -7,7 +7,7 @@
 int main(void)
 {
 int plus;
-for (plus = 0 ; plus <= 9  ; plus++)
+for (plus = 0 ; plus < 10 ; plus++)
 {
 putchar(plus + '0');
 
