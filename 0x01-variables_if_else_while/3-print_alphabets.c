@@ -1,15 +1,22 @@
 #include <stdio.h>
+#include <ctype.h>
 
-/* printing the alphabet */
+/**
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
-	char c;
+int ch, cd;
 
-	for (c = 'a'; c <= 'z'; c++)
-		putchar(c);
-	for (c = 'A'; c <= 'Z'; c++)
-		putchar(c);
-		putchar('\n');
+for (cd = 'a'; cd <= 'z'; cd++)
+putchar(cd);
 
-	return (0);
+for (ch = 'a'; ch <= 'z'; ch++)
+putchar(toupper(ch));
+
+
+putchar('\n');
+return (0);
 }
