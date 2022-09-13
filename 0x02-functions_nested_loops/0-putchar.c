@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+#include <main.h>
 /**
  * main - print out _putchar without printf or puts
  *
