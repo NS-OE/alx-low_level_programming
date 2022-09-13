@@ -22,7 +22,7 @@ putchar(' ');
 putchar((pl / 10) + '0');
 putchar((pl % 10) + '0');
 
-if (plus != 98 || pl != 99)
+if (plus != 99 || pl != 99)
 {
 putchar(',');
 putchar(' ');

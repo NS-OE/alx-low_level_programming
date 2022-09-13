@@ -12,8 +12,10 @@ for (plus = 0 ; plus < 10  ; plus++)
 putchar(plus + '0');
 
 if (plus < 9)
+{
 putchar(',');
 putchar(' ');
+}
 }
 putchar('\n');
 return (0);
