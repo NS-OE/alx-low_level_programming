@@ -15,7 +15,7 @@ int add(int n1, int n2)
 
 int nsum;
 
-nsum = add(n1, n2);
+nsum = n1 +  n2;
 
 return (nsum);
 }
