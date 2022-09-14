@@ -15,5 +15,5 @@ int n, nabs;
 
 nabs = abs(n);
 
-return (0);
+return nabs;
 }
