@@ -3,17 +3,19 @@
 /**
  * add - add 2 integers
  *
- * @int: data type
+ * @n1: integer variable
+ *
+ * @n2: integer variable
  *
  * Return: Always 0 (Success)
  *
  */
-int add(int, int)
+int add(int n1, int n2)
 {
 
-int nsum, n1, n2;
+int nsum;
 
 nsum = add(n1, n2);
 
-return (0);
+return (nsum);
 }

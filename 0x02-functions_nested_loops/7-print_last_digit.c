@@ -3,17 +3,17 @@
 /**
  * print_last_digit  - printsblast digit of a no
  *
- * @int: data type
+ * @n: integer variable
  *
  * Return: Always 0 (Success)
  *
  */
-int print_last_digit(int)
+int print_last_digit(int n)
 {
 
-int n, l_dg;
+int ldg;
 
-l_dg = n % 10;
+ldg = n % 10;
 
-return (0);
+return (ldg);
 }

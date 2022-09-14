@@ -1,19 +1,20 @@
 #include "main.h"
+#include <stdlib.h>
 #include <stdio.h>
 /**
  * _abs  - print absolute value
  *
- * @int: data type
+ * @n: integer variable
  *
  * Return: Always 0 (Success)
  *
  */
-int _abs(int)
+int _abs(int n)
 {
 
-int n, nabs;
+int nabs;
 
 nabs = abs(n);
 
-return nabs;
+return (nabs);
 }
