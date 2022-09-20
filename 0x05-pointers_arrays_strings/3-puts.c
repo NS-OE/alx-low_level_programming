@@ -1,24 +1,13 @@
 #include "main.h"
 #include <stdio.h>
-#include <unistd.h>
 /**
- * swap_int - swap values in a & b
+ * _puts - print a string with newline7
  *
- * @a: pointer
- * @b: pointer
+ * @str: pointer
  * Return: Always 0.
  */
-int main(void)
-{
-  char *str;
-
-  str = "I do not fear computers. I fear the lack of them - Isaac Asimov";
-  _puts(str);
-  return (0);
-}
 
 void _puts(char *str)
 {
-  write(1, str, 86);
-  putchar('\n');
+puts(str);
 }
