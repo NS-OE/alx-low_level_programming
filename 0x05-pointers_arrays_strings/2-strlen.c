@@ -9,7 +9,7 @@
  * Return: Always 0.
  */
 
-int _strlen(char *s)
+/*int _strlen(char *s)
 {
 int sl;
 
@@ -21,4 +21,4 @@ sl++;
 s++;
 }
 return (sl);
-}
+}*/
