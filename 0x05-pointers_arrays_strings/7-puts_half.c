@@ -7,37 +7,30 @@
  *
  * Return: Always 0.
  */
-int main(void)
-{
-  char *str;
-
-  str = "0123456789";
-  puts_half(str);
-  return (0);
-}
 
 void puts_half(char *str)
 {
-  int l, lo, i;
+  int len = 0;
+  char *y = str;
+  int n;
 
-  for (l = 0; *str != '\0'; l++)
+  while (*y != '\0')
     {
-      str++;
+      y++;
+      len++;
     }
-  lo = l - 1;
-  for (i = 0; i <= lo; i++)
+  if (len % 2 == 0)
     {
-      if (i % 2 == 0)
-      {
-	putchar(str[i]);
-      }
+      n = len / 2;
     }
-  putchar('\n');
-  /*for(i = 0; i > (l / 2) && i <= l; i++)
+  else
     {
-      str++;
-      
-    }*/
- 
+      n = (len + 1) / 2;
+    }
+  for ( ; n < len ; n++)
+    {
+      _putchar(str[n]);
+    }
+  _putchar('\n');
 }
   
