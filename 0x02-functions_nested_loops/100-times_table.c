@@ -1,67 +1,63 @@
 #include "main.h"
 
 /**
- * print_times_table - prints the times table of n
+ * main -printing n timestable from 0 to n
  *
- * Return: no return
+ * print_times_table - function prototype
+ * Return: Always 0 success
  */
+
+int main(void)
+{
+	print_times_table(3);
+	putchar('\n');
+	print_times_table(5);
+	putchar('\n');
+	print_times_table(98);
+	putchar('\n');
+	print_times_table(12);
+	return (0);
+}
+
 void print_times_table(int n)
 {
-int i, j, mul;
+	int i, p, r;
 
- if (n <= 15 && n > 0)
- {
- for (i = 0; i <= n;)
-{
-      for (j = 0; j <= n; j++)
-      {
-	mul = i * j;
-	if (mul >= 10 && j < n && mul < 100)
+	if (!(n > 15 || n < 0))
 	{
-	  _putchar(' ');
-	  _putchar((mul / 10) + '0');
-	  _putchar((mul % 10) + '0');
-	  _putchar(',');
-	  _putchar(' ');
-	}
-	else if (mul > 99 && j < n)
-	  {
-	    _putchar((mul / 100) + '0');
-            _putchar(((mul / 10) % 10) + '0');
-	    _putchar((mul % 10) + '0');
-	    _putchar(',');
-	    _putchar(' ');
-	  }
-	else if (mul > 99 && j == n)
-	  {
-	    _putchar((mul / 100) + '0');
-            _putchar(((mul / 10) % 10) + '0');
-	    _putchar((mul % 10) + '0');
-	  }
-	
-	else if (mul >= 10 && j == n)
-	{
-	  _putchar(' ');
-	  _putchar((mul / 10) + '0');
-	  _putchar((mul % 10) + '0');
-	}
-	else if (mul < 10 && j == n)
-	{
-	  _putchar(' ');
-	  _putchar(' ');
-	  _putchar(mul + '0');
-	}
-	else
-	{
-	  _putchar(' ');
-	  _putchar(' ');
-	  _putchar((mul) + '0');
-	  _putchar(',');
-	  _putchar(' ');
-	}
-      }
-  _putchar('\n');
-  i++;
-}
-}
-}
+		for (i = 0; i <= n; i++)
+		{
+			for (p = 0; p <= n; p++)
+			{
+				r = i * p;
+				if (r < 10)
+				{
+					if (!(p == 0 && r == 0))
+					{
+						putchar(' ');
+						putchar(' ');
+						putchar(' ');
+					}
+					putchar(r + '0');
+				}
+				else if (r > 9 && r < 100)
+				{
+					putchar(' ');
+					putchar(' ');
+					putchar((r / 10) + '0');
+					putchar((r % 10) + '0');
+				{
+					else
+					{
+						putchar(' ');
+						putchar((r / 100) + '0');
+						putchar(((r / 10) % 10) + '0');
+						putchar((r % 10) + '0');
+					}
+					if (p != n)
+						putchar(',');
+				}
+				putchar('\n');
+				}
+			}
+		}
