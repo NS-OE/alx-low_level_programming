@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdio.h>
 /**
  * _puts - print a string with newline7
  *
@@ -9,5 +8,9 @@
 
 void _puts(char *str)
 {
-puts(str);
+  if (*str == '\0')
+    return;
+
+  _putchar(*str);
+  _puts(str + 1);
 }
