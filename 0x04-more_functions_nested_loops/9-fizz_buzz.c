@@ -24,6 +24,6 @@ for (fz = 1; fz <= 100; fz++)
 	else
 		printf("%d ", fz);
 }
-
+printf("\n");
 return (0);
 }

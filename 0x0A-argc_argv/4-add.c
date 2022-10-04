@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <ctype.h>
 #include <stdlib.h>
 /**
  * main - writes a program that adds the positive numbers passed to argv.
@@ -10,20 +11,22 @@
 
 int main(int argc, char *argv[])
 {
-int i, sum;
+int i, sum, j;
 
 if (argc > 2)
 {
 for (i = 1; i < argc; i++)
-	if (atoi(argv[i]) != 0)
+{
+	for (j = 0; argv[i][j] != '\0'; j++)
 	{
-		sum += atoi(argv[i]);
+		if (!isdigit(argv[i][j]))
+		{
+			printf("Error\n");
+			return (1);
+		}
 	}
-	else
-	{
-		printf("Error\n");
-		return (1);
-	}
+	sum += atoi(argv[i]);
+}
 printf("%d\n", sum);
 }
 else
