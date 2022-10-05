@@ -15,15 +15,15 @@ char *x;
 unsigned int i, len;
 
 len = strlen(str) + 1;
-if (!(str == NULL))
+if (str == NULL)
 {
+	return (NULL);
+}
 	x = malloc(sizeof(char) * len);
 	if (x == NULL)
 		return (NULL);
 	for (i = 0; i < len; i++)
 		x[i] = str[i];
 	return (x);
-}
-else
-	return (NULL);
+
 }
