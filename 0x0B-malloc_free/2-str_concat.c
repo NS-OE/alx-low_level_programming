@@ -17,11 +17,11 @@ unsigned int i, len1, len2, lenT;
 
 	if (s1 == NULL)
 	{
-		*s1 = "";
+		s1 = "";
 	}
 	if (s2 == NULL)
 	{
-		*s2 = "";
+		s2 = "";
 	}
 	len1 = strlen(s1);
 	len2 = strlen(s2);
