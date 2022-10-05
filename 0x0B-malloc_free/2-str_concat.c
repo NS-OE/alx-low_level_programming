@@ -21,6 +21,8 @@ if (!(s1 == NULL || s2 == NULL))
 	len2 = strlen(s2);
 	lenT = len1 + len2 + 1;
 	x = malloc(lenT * sizeof(char));
+	if (x == NULL)
+		return (NULL);
 	for (i = 0; i < len1; i++)
 		x[i] = s1[i];
 	for (i = 0; i < len2; i++)
