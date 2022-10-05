@@ -15,11 +15,11 @@ char *str_concat(char *s1, char *s2)
 char *x;
 unsigned int i, len1, len2, lenT;
 
-if (s1 != NULL || s2 != NULL)
+if (!(s1 == NULL || s2 == NULL))
 {
 	len1 = strlen(s1);
 	len2 = strlen(s2);
-	lenT = len1 + len2;
+	lenT = len1 + len2 + 1;
 	x = malloc(lenT * sizeof(char));
 	for (i = 0; i < len1; i++)
 		x[i] = s1[i];
