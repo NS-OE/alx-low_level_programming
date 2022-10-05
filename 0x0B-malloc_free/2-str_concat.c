@@ -17,7 +17,7 @@ unsigned int i, len1, len2, lenT;
 
 	if (s1 == NULL || s2 == NULL)
 	{
-		*s1 = *s2 = '\0';
+		*s1 = *s2 = "";
 	}
 	len1 = strlen(s1);
 	len2 = strlen(s2);
