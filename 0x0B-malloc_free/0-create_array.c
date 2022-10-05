@@ -18,6 +18,8 @@ unsigned int i;
 if (size > 0)
 {
 	x = malloc(size * sizeof(char));
+	if (x == NULL)
+		return(NULL);
 	for (i = 0; i < size; i++)
 		x[i] = c;
 	return (x);
