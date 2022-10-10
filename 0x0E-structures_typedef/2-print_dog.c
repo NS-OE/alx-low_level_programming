@@ -6,7 +6,16 @@
  *
  * @d: pointer to address of strut
  */
+int main(void)
+{
+  /*  struct dog my_dog;
 
+  my_dog.name = NULL;
+  my_dog.age = 0;
+  my_dog.owner = NULL;*/
+  print_dog(NULL);
+  return (0);
+}
 void print_dog(struct dog *d)
 {
 
