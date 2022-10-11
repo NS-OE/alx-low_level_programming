@@ -6,10 +6,8 @@
  *
  * @d: pointer to address of strut
  */
-
 void print_dog(struct dog *d)
 {
-
 	if (d == NULL)
 	{
 		return;
