@@ -1,6 +1,7 @@
 #ifndef FUNPOINT_H_
 #define FUNPOINT_H_ "function_pointers.h"
-#define size_t int
+
+#include <stdio.h>
 
 int _putchar(char c);
 void print_name(char *name, void (*f)(char *));
