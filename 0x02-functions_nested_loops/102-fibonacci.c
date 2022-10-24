@@ -10,7 +10,7 @@ int main(void)
 unsigned long int b, bt, b0 = 1, b1 = 2, total = 50;
 
 	printf("%ld, %ld, ", b0, b1);
-	for (b = 0; b < total; b++)
+	for (b = 2; b < total; b++)
 	{
 		bt = b0 + b1;
 		b0 = b1;
