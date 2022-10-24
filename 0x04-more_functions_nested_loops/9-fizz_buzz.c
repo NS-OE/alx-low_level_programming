@@ -11,7 +11,6 @@ int main(void)
 int fz, j;
 
 j = 1;
-
 printf("%d", j);
 
 for (fz = 2; fz <= 100; fz++)
@@ -28,6 +27,6 @@ for (fz = 2; fz <= 100; fz++)
 	else
 		printf(" %d", fz);
 }
-putchar('\n');;
+putchar('\n');
 return (0);
 }
