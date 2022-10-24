@@ -19,13 +19,10 @@ for (i = 0; i < 10; i++)
 		if (c > 9)
 		{
 			_putchar((c / 10) + '0');
+
+		}
 			_putchar((c % 10) + '0');
-		}
-		else
-		{
-			_putchar(c + '0');
-		}
 	}
-	_putchar('\n');
+	printf("\n");
 }
 }

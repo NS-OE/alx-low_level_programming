@@ -8,22 +8,24 @@
 
 int main(void)
 {
-int fz;
+int fz, j = 1;
 
-for (fz = 1; fz <= 100; fz++)
+printf("%d", j);
+
+for (fz = 2; fz <= 100; fz++)
 {
 	if ((fz % 3 == 0) && (fz % 5 == 0))
-		printf("FizzBuzz ");
+		printf(" FizzBuzz");
 
 	else if (fz % 3 == 0)
-		printf("Fizz ");
+		printf(" Fizz");
 
 	else if (fz % 5 == 0)
-		printf("Buzz ");
+		printf(" Buzz");
 
 	else
-		printf("%d ", fz);
+		printf(" %d", fz);
 }
-printf("\n");
+putchar('\n');;
 return (0);
 }

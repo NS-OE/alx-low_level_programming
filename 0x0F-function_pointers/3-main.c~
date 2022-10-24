@@ -1,0 +1,29 @@
+#include "3-calc.h"
+#include <stdio.h>
+
+/**
+ * main - program that performs simple operations
+ *
+ * Return: 0 success or -1.
+ */
+
+int main(int argc, char* argv[])
+{
+
+	if (n > j)
+	{
+		printf("Error\n");
+		return (98);
+	}
+	if (n != j)
+	{
+		printf("Error\n");
+		return (99);
+	}
+	if (n / 0 || n % 0)
+	{
+		printf("Error\n");
+		return (100);
+	}
+
+}
