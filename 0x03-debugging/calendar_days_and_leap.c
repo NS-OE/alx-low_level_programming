@@ -28,7 +28,7 @@ int main(void)
   int day;
   int year;
 
-
+  printf("input month day year\n");
   scanf("%d %d %d", &month, &day, &year);
   /*month = 2;
   day = 29;
