@@ -16,7 +16,7 @@ for (n = 0; src[n] != '\0'; n++)
 {
 }
 len = n + 1;
-for (l = 0; l <= len; l++)
+for (l = 0; l < len; l++)
 {
 	dest[l] = src[l];
 }
