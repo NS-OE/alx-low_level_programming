@@ -33,4 +33,3 @@ _putchar(str[n]);
 }
 _putchar('\n');
 }
-  
