@@ -10,17 +10,18 @@
 
 void print_recur_no(int n)
 {
+	unsigned int nom = n;
 	if (n < 0)
 	{
 		_putchar('-');
-		n *= -1;
+		nom *= -1;
 	}
 
 	if (n == 0)
 		return;
 
-	print_recur_no(n / 10);
-	_putchar((n % 10) + '0');
+	print_recur_no(nom / 10);
+	_putchar((nom % 10) + '0');
 }
 
 /**
