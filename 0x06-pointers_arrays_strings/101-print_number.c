@@ -7,7 +7,7 @@
  * Return: returns nothing
  */
 
-void print_number(int n)
+void print_recur_no(int n)
 {
 	if (n < 0)
 	{
@@ -18,9 +18,14 @@ void print_number(int n)
 	if (n == 0)
 		return;
 
-	/*if (n == 0)
-		putchar('0');*/
-
-	print_number(n / 10);
+	print_recur_no(n / 10);
 	putchar((n % 10) + '0');
+}
+
+void print_number(int n)
+{
+	if (n == 0)
+		putchar('0');
+	else
+		print_recur_no(n);
 }
