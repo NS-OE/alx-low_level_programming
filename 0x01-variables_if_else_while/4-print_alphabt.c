@@ -9,8 +9,9 @@ int main(void)
 {
 int plus;
 
- for (plus = 'a' ; plus != 'e','q' && plus <= 'z' ; plus++)
+for (plus = 'a' ; plus <= 'z' ; plus++)
 {
+if (plus != 'q' && plus != 'e')
 putchar(plus);
 
 }
