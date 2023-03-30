@@ -11,26 +11,29 @@ char *cap_string(char *s)
 {
 	int i;
 
-	if (s[0] >= 97 && s[0] <= 121)
-		s[0] -= 32;
 	for (i = 0; s[i] != '\0'; i++)
 	{
-	if (s[i] == ' ' && (s[i + 1] >= 97 && s[i + 1] <= 121))
-	{
-		s[i + 1] -= 32;
-	}
-	if (s[i] == '.' && (s[i + 1] >= 97 && s[i + 1] <= 121))
-	{
-		s[i + 1] -= 32;
-	}
-	if (s[i] == '\n' && (s[i + 1] >= 97 && s[i + 1] <= 121))
-	{
-		s[i + 1] -= 32;
-	}
-	if (s[i] == '\t' && (s[i + 1] >= 97 && s[i + 1] <= 121))
-	{
-		s[i + 1] -= 32;
-	}
+		if (s[i + 1] >= 'a' && s[i + 1] <= 'z')
+		{
+			switch (s[i])
+			{
+				case ' ':
+				case '\n':
+				case '\t':
+				case ',':
+				case ';':
+				case '.':
+				case '!':
+				case '?':
+				case '"':
+				case '(':
+				case ')':
+				case '{':
+				case '}':
+					s[i + 1] -= 32;
+					break;
+			}
+		}
 	}
 	return (s);
 }
