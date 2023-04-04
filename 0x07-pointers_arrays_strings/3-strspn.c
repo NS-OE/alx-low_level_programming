@@ -19,7 +19,6 @@ unsigned int _strspn(char *s, char *accept)
 			if (s[i] == accept[j])
 			{
 				val += 1;
-				printf("%c\n", s[i]);
 			}
 			switch (s[i + 1])
 			{
