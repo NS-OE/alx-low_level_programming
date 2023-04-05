@@ -23,7 +23,7 @@ int _sqrt(int n, int m)
  * @n:  Sqr root variable
  * Return: returns square root or -1 (for error) to main.
  */
-nt _sqrt_recursion(int n)
+int _sqrt_recursion(int n)
 {
 	return (_sqrt(n, n));
 }
