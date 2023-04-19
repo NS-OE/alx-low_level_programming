@@ -12,34 +12,44 @@
 
 dog_t *new_dog(char *name, float age, char *owner)
 {
-	struct dog *d;
-	int i, nmlen, ownlen;
+	struct dog *d, *copy;
 
 	d = malloc(sizeof(dog_t));
 	if (d == NULL)
 		return (NULL);
-	nmlen = ownlen = 0;
-	while (name[nmlen++])
-		;
-	while (owner[ownlen++])
-		;
-	d->name = malloc(nmlen * sizeof(d->name));
-	if (d->name == NULL)
-	{
-		free(d);
-		return (NULL);
-	}
-	for(i = 0; i<= nmlen; i++)
-		d->name[i] = name[i];
+	d->name = name;
 	d->age = age;
-	d->owner = malloc(ownlen * sizeof(d->owner));
-	if (d->owner == NULL)
+	d->owner = owner;
+
+	if (d->name == NULL || d->owner == NULL)
 	{
 		free(d->name);
+		free(d->owner);
 		free(d);
 		return (NULL);
 	}
-	for(i = 0; i<= ownlen; i++)
-		d->owner[i] = owner[i];
-	return (d);
+
+	copy = malloc(sizeof(dog_t));
+	if (copy == NULL)
+		return (NULL);
+	copy->name = d->name;
+	copy->age = d->age;
+	copy->owner = d->owner;
+
+	if (copy->name == NULL || copy->owner == NULL)
+	{
+		free(copy->name);
+		free(copy->owner);
+		free(copy);
+		return (NULL);
+	}
+	return (copy);
+}
+int main(void)
+{
+    dog_t *my_dog;
+
+    my_dog = new_dog("Poppy", 3.5, "Bob");
+    printf("My name is %s, and I am %.1f :) - Woof!\n", my_dog->name, my_dog->age);
+    return (0);
 }
