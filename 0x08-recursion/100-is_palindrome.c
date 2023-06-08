@@ -22,8 +22,6 @@ int _strlen(char *s)
 
 int is_drome(int p, char *s)
 {
-	int d;
-
 	if (*s == '\0')
 		return (1);
 
