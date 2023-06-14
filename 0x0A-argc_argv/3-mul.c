@@ -11,7 +11,7 @@
 
 int main(int argc, char *argv[])
 {
-	int i, r, j;
+	int r, j;
 
 	if (argc <= 2)
 	{
@@ -19,11 +19,8 @@ int main(int argc, char *argv[])
 		return (1);
 	}
 
-	for (i = 0; i < argc; i++)
-	{
 		r = atoi(argv[1]);
 		j = atoi(argv[2]);
-	}
 	printf("%d\n", r * j);
 	return (0);
 }
