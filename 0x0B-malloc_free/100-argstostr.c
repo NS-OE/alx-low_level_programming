@@ -34,5 +34,10 @@ char *argstostr(int ac, char **av)
 		con[k] = '\n';
 		k++;
 	}
+	if (k < p)
+	{
+		for (i = k; i < p; i++)
+			free(con[i]);
+	}
 	return (con);
 }
